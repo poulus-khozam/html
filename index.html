@@ -4,7 +4,7 @@
     <title>Search on Google</title>
     <script>
         function redirectToGoogleSearch() {
-            const searchQuery = window.location.search.slice(2); // Extract the query string (without leading "?")
+            const searchQuery = window.location.search.slice(1); // Extract the query string (without leading "?")
             window.location.href = `https://www.google.com/search?q=${searchQuery}`;
         }
     </script>
