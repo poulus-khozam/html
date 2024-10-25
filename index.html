@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; URL='https://google.com.eg'" />
+    <title>Search on Google</title>
+    <script>
+        function redirectToGoogleSearch() {
+            const searchQuery = window.location.search.slice(2); // Extract the query string (without leading "?")
+            window.location.href = `https://www.google.com/search?q=${searchQuery}`;
+        }
+    </script>
 </head>
 <body>
-    Redirecting...
+    <h1>Redirecting to Google Search...</h1>
+    <script>redirectToGoogleSearch();</script>
 </body>
 </html>
